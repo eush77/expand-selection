@@ -26,9 +26,6 @@
     "textContent",
     "text"
   ],
-  "dependencies": {
-    "browserify": "^10.2.1",
-    "stread": "^0.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
