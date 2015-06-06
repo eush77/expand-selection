@@ -27,6 +27,10 @@ Returns [Selection] object.
 
 Clears current selection before updating. Defaults to `false`.
 
+#### `opts.ignoreCase`
+
+Whether to ignore case while attempting a match in a string. Defaults to `false`.
+
 ## Install
 
 ```

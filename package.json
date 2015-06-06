@@ -24,7 +24,7 @@
     "text"
   ],
   "dependencies": {
-    "range-lookup": "^0.1.0"
+    "range-lookup": "^0.2.0"
   },
   "devDependencies": {}
 }

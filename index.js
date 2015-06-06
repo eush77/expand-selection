@@ -13,12 +13,13 @@ module.exports = function (query, opts) {
   }
 
   query = query.toString();
+  opts = opts || {};
 
-  if (opts && opts.clear) {
+  if (opts.clear) {
     selection.removeAllRanges();
   }
 
-  rangeLookup(query)
+  rangeLookup(query, { ignoreCase: opts.ignoreCase })
     .forEach(selection.addRange.bind(selection));
 
   return selection;
