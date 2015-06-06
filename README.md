@@ -1,34 +1,26 @@
-[![npm](https://nodei.co/npm/highlight-selection.png)](https://nodei.co/npm/highlight-selection/)
+[![npm](https://nodei.co/npm/expand-selection.png)](https://nodei.co/npm/expand-selection/)
 
-# highlight-selection
+# expand-selection
 
 [![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
 
 Highlight selected text on the rest of HTML page.
 
-[travis]: https://travis-ci.org/eush77/highlight-selection
-[travis-badge]: https://travis-ci.org/eush77/highlight-selection.svg
-[david]: https://david-dm.org/eush77/highlight-selection
-[david-badge]: https://david-dm.org/eush77/highlight-selection.png
+[travis]: https://travis-ci.org/eush77/expand-selection
+[travis-badge]: https://travis-ci.org/eush77/expand-selection.svg
+[david]: https://david-dm.org/eush77/expand-selection
+[david-badge]: https://david-dm.org/eush77/expand-selection.png
 
 ## API
 
-### `highlightSelection()`
+### `expandSelection()`
 
 Sets up event handlers.
-
-## CLI
-
-### `hise`
-
-Appends the script to the HTML page.
-
-Reads stdin, writes to stdout.
 
 ## Install
 
 ```
-npm install [-g] highlight-selection
+npm install [-g] expand-selection
 ```
 
 ## License
