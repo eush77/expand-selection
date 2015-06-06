@@ -15,9 +15,11 @@ Add matching text to the current DOM [selection].
 
 ### `expandSelection(string, [opts])`
 
-### `expandSelection(selection, [opts])`
+### `expandSelection([selection], [opts])`
 
 Searches document for `string` or `selection.toString()` and selects matching ranges.
+
+`selection` defaults to `window.getSelection()`.
 
 Returns [Selection] object.
 
