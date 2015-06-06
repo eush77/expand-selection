@@ -2,25 +2,33 @@
 
 # expand-selection
 
-[![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
+[![Dependency Status][david-badge]][david]
 
-Highlight selected text on the rest of HTML page.
+Add matching text to the current DOM [selection].
 
-[travis]: https://travis-ci.org/eush77/expand-selection
-[travis-badge]: https://travis-ci.org/eush77/expand-selection.svg
+[selection]: https://developer.mozilla.org/en-US/docs/Web/API/Selection
+
 [david]: https://david-dm.org/eush77/expand-selection
 [david-badge]: https://david-dm.org/eush77/expand-selection.png
 
 ## API
 
-### `expandSelection()`
+### `expandSelection(string, [opts])`
 
-Sets up event handlers.
+### `expandSelection(selection, [opts])`
+
+Searches document for `string` or `selection.toString()` and selects matching ranges.
+
+Returns [Selection] object.
+
+#### `opts.clear`
+
+Clears current selection before updating. Defaults to `false`.
 
 ## Install
 
 ```
-npm install [-g] expand-selection
+npm install expand-selection
 ```
 
 ## License

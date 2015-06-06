@@ -1,12 +1,9 @@
 {
   "name": "expand-selection",
   "version": "0.0.0",
-  "description": "Search and highlight selected text on the HTML page",
+  "description": "Add matching text to the current DOM selection",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "test": "tape test/*.js"
-  },
   "files": [
     "index.js"
   ],
@@ -19,13 +16,15 @@
     "url": "https://github.com/eush77/expand-selection/issues"
   },
   "keywords": [
-    "html",
+    "dom",
     "selection",
+    "expand",
     "search",
-    "highlight",
-    "textContent",
+    "lookup",
     "text"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "range-lookup": "^0.1.0"
+  },
   "devDependencies": {}
 }

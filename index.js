@@ -3,14 +3,16 @@
 var rangeLookup = require('range-lookup');
 
 
-module.exports = function () {
-  document.addEventListener('mouseup', function () {
-    var selection = window.getSelection();
-    if (selection.isCollapsed || selection.rangeCount != 1) {
-      return;
-    }
-    var query = selection.toString();
-    rangeLookup(selection.toString())
-      .forEach(selection.addRange.bind(selection));
-  });
+module.exports = function (query, opts) {
+  query = query.toString();
+  var selection = window.getSelection();
+
+  if (opts && opts.clear) {
+    selection.removeAllRanges();
+  }
+
+  rangeLookup(selection.toString())
+    .forEach(selection.addRange.bind(selection));
+
+  return selection;
 };
